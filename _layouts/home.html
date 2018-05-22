@@ -2,10 +2,14 @@
 layout: archive
 ---
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+{{ content }}
 
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
 
-{% include paginator.html %}
+<section id="{{ year.name }}" class="taxonomy__section">
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
+    {% for post in site.posts %}
+    {% include archive-single.html type=page.entries_layout %}
+    {% endfor %}
+</div>
+<a href="#site-nav" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>
