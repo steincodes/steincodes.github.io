@@ -3,7 +3,7 @@ main:
   - title: "Blog"
     url: "/blog"
   - title: "Tutorials"
-    url: "/tut"
+    url: "/tutorials"
   - title: "Resources"
     url: "/resources"
   - title: "About Me"

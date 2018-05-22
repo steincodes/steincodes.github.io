@@ -1,8 +1,7 @@
 ---
 layout: home
-title: "Blog"
+title: "All Posts"
 author_profile: true
 permalink: /blog/
 ---
-
-List of all my blog posts
+<hr/>
