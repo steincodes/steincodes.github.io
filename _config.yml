@@ -39,7 +39,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 160
 comments:
-  provider               : true # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : "steincodes" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -91,7 +91,7 @@ naver_site_verification  :
 twitter:
   username               : "steincodes"
 facebook:
-  username               :
+  username               : "iamswarnimarun"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -123,13 +123,13 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "iamswarnimarun"
   foursquare       :
   github           : "swarnimarun"
   gitlab           : 
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "swarnimarun"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
