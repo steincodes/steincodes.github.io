@@ -6,8 +6,8 @@ date:   2018-05-20
 related: true
 category: 
     - Tutorials
-tag:
     - Godot
+tag:
     - Shaders
     - Beginners
 comments: true
@@ -37,13 +37,15 @@ Link: [godot-shader-tutorials][shader-repo]
 
 So the first step to becoming a programmer is to learn the basics of what you are doing and similar is the case with Graphics Programming.
 
-![Alt Text for image](../../images/teaser.png)
+![Alt Text for image](../../../images/teaser.png)
 
-To give you all a basic idea, let's compare the GPU to a factory or a plant that processes lots of stuff at tremendous speeds and this makes the job of managing very difficult. In a similar fashion GPU's process image information and the management of it all is done through shaders.
+To give you all a basic idea, let's compare the GPU to a factory that processes lots of stuff at tremendous speeds and this makes the job of managing very difficult. In a similar fashion GPU's process image information and the management of it all is done through shaders.
 
 Shaders are the managers of GPU while GPU's cores are the workers.
+This also allows for parallel processing of information. Just as in factories multiple lines are working parallel to each other.
 
-In case of GPUs all the workers are unaware of the other worker's work and so it becomes difficult to coordinate. So shaders devise ways to help with it.
+In factories workers don't know that's the serial number of the file last processed by his neighbour. Similarly, in case of GPUs all the cores are unaware of the other cores's process and so it becomes difficult to coordinate. This is a major drawback of parallel processing. 
+And, so shaders devise ways to help with it.
 
 This all boils down and tells us that shaders simply use the GPU with all it's limitations to produce the final result.
 
@@ -61,3 +63,17 @@ Godot Shaders use GLES but a custom version that is built for Godot. So I must s
 
 Godot docs tell us that all shaders must have a `shader_type` and this can either `canvas_item, spatial or particles`.
 Next up we should also add a `render_mode` and this can have various options based on the `shader_type` and our needs.
+
+Here's some examples in video format. You can skip the video if you like.
+
+<iframe src="https://www.youtube.com/embed/Lk-N-Ej0DDg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+
+Here's some written shader examples and explainations.
+
+Step 1: Taking external input in shaders. This is difficult cause shaders use GPU which is a fortress and hard to get through but there is a way to do it and it's by using `uniform` keyword.
+
+
+```glsl
+uniform vec4 color : hint_color; // here color variable is an output for the shader
+```
