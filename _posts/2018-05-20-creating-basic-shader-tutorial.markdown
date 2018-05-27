@@ -1,6 +1,6 @@
 ---
 layout: single
-classes: wide
+toc: true
 title:  "Basics of Shaders with Godot"
 date:   2018-05-20
 related: true
@@ -18,15 +18,15 @@ Godot is a powerful game engine and Godot's Shading language as of the time of w
 
 So, Godot's Shading language is quite similar to OpenGL while still having lots of differences.
 
-### Requirements For This Tutorial
+## Requirements For This Tutorial
 
 As of writing this tutorial I don't expect any previous knowledge of Godot or Programming or Shaders. But I expect that the reader knows basic Maths cause I won't be explaining it.
 
-### Who is this tutorial for:
+## Who is this tutorial for:
 
 If you are a programmer with no knowledge of Shaders or Graphics Programming or if you are a designer/artist you is looking to learn to add more umph! to their games you are Welcome.
 
-### Project Files
+## Project Files
 
 Download the project files from my github repository.
 Link: [godot-shader-tutorials][shader-repo]
@@ -75,5 +75,6 @@ Step 1: Taking external input in shaders. This is difficult cause shaders use GP
 
 
 ```glsl
-uniform vec4 color : hint_color; // here color variable is an output for the shader
+uniform vec4 color : hint_color;
+// here color variable is an output for the shader
 ```

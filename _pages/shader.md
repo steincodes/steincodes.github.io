@@ -1,14 +1,14 @@
 ---
 layout: archive
-title: "Tutorials"
+title: "Shaders"
 author_profile: true
-permalink: /tutorials/
+permalink: /shader/
 classes: wide
 ---
 <hr/>
 <section id="post" class="taxonomy__section">
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
-    {%- for post in site.categories[page.title] -%}
+    {%- for post in site.tags[page.title] -%}
     {% include archive-single.html %}
     {%- endfor -%}
 </div>

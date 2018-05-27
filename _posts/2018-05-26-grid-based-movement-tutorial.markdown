@@ -1,6 +1,8 @@
 ---
 layout: single
-classes: wide
+author_profile: false
+classes: 
+    - wide-left
 title:  "Grid Based Movement"
 date:   2018-05-26
 related: true
@@ -11,6 +13,7 @@ tag:
     - 2D
     - Beginners
 comments: true
+toc: true
 ---
 
 This is a Grid Based Movement tutorial it will be created into a video soon enough.
@@ -18,15 +21,15 @@ Hope you guys like it.
 
 Grid-Based systems are common in retro and many newer indie games in this post I have 2 different methods of implementing grid-based movement each having various advantages and disadvantages. I will also list the uses of the two methods.
 
-### Requirements For This Tutorial
+## Requirements For This Tutorial
 
 As of writing this tutorial I don't expect any previous knowledge of Godot or Programming or Maths.
 
-### Who is this tutorial for:
+## Who is this tutorial for:
 
 Anyone who wants to learn to code the more experienced can also get a few take-aways.
 
-### Project Files
+## Project Files
 
 Download the project files from my github repository.
 Link: [godot-beginners-tutorials][godot-beginners-tutorials]
@@ -46,7 +49,7 @@ The first method is using of a lerp function, to move the player by directly mod
 
 - Limited and difficult to modify.
 
-### Movement Script
+### Script or Code
 <hr/>
 
 ```swift
@@ -67,7 +70,7 @@ func _process(delta):
     if inp.magnitude != 0:
         # setup initial and target position using tileSize and inp
         initial = self.position
-        # using "self." is not necessary I use it to help the beginners understand better
+        # using "self." is not necessary just for better readability
         target = initial + tileSize * inp
         # reset inp = (0,0)
         inp = Vector2()
@@ -76,13 +79,16 @@ func _process(delta):
         get_input_dir()
 
 func get_input_dir():
-    # this check allows for only 4-way motion, if you want 8 way motion then remove the ifs
+    # this check allows for only 4-way motion,
+    #                  if you want 8 way motion then remove the ifs
     if inp.x == 0:
         # convert boolean to int to use them to get the input direction
-        inp.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+        inp.y = (int(Input.is_action_pressed("ui_down"))
+                                    - int(Input.is_action_pressed("ui_up")))
     if inp.y == 0:
         # convert boolean to int to use them to get the input direction
-        inp.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+        inp.x = (int(Input.is_action_pressed("ui_right"))
+                                  - int(Input.is_action_pressed("ui_left")))
 ```
 
 

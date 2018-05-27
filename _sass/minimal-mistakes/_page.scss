@@ -518,3 +518,60 @@
     }
   }
 }
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+   .wide-full {
+    .page {
+      @include breakpoint($large) {
+        padding-right: 0;
+        width: 100%;
+      }
+  
+      @include breakpoint($x-large) {
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+  
+    .page__related {
+      @include breakpoint($large) {
+        padding-right: 0;
+        width: 100%;
+      }
+  
+      @include breakpoint($x-large) {
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+  }
+  
+
+  /*
+   Wide Pages
+   ========================================================================== */
+
+   .wide-left {
+    .page {
+      @include breakpoint($large) {
+        width: 100%;
+      }
+  
+      @include breakpoint($x-large) {
+        width: 100%;
+      }
+    }
+  
+    .page__related {
+      @include breakpoint($large) {
+        width: 100%;
+      }
+  
+      @include breakpoint($x-large) {
+        width: 100%;
+      }
+    }
+  }

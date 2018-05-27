@@ -4,6 +4,8 @@ main:
     url: "/blog"
   - title: "Tutorials"
     url: "/tutorials"
+  - title: "Shaders"
+    url: "/shader"
   - title: "Resources"
     url: "/resources"
   - title: "About Me"
