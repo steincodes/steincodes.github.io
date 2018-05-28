@@ -23,18 +23,18 @@ Grid-Based systems are common in retro and many newer indie games in this post w
 
 ## Requirements For This Tutorial
 
-As of writing this tutorial I don't expect any previous knowledge of Godot or Programming or Maths.
+As of writing this tutorial I don't expect any previous knowledge of Godot or Programming or Maths. Probably basic maths. Nothing above middle school.
 
 ## Who is this tutorial for:
 
-Anyone who wants to learn to code the more experienced can also get a few take-aways.
+Anyone who wants to learn to code the more experienced can also get a few take-aways. So it is for people with lesser programming or Godot experience than a probably intermediate level user. 
 
 ## Project Files
 
 Download the project files from my github repository.
-Link: [godot-beginners-tutorials][godot-beginners-tutorials] Not uploaded yet. Will be uploaded with the video tutorial.
 
-[godot-beginners-tutorials]: https://github.com/swarnimarun
+Not uploaded yet. Will be uploaded with the video tutorial.
+
 
 ## Grid-Based Movement
 
