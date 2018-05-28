@@ -19,7 +19,7 @@ toc: true
 This is a Grid Based Movement tutorial it will be created into a video soon enough.
 Hope you guys like it.
 
-Grid-Based systems are common in retro and many newer indie games in this post I have 2 different methods of implementing grid-based movement each having various advantages and disadvantages. I will also list the uses of the two methods.
+Grid-Based systems are common in retro and many newer indie games in this post we will go through creating a script that does just that and then we will try to understand the steps involved in it.
 
 ## Requirements For This Tutorial
 
@@ -32,22 +32,23 @@ Anyone who wants to learn to code the more experienced can also get a few take-a
 ## Project Files
 
 Download the project files from my github repository.
-Link: [godot-beginners-tutorials][godot-beginners-tutorials]
+Link: [godot-beginners-tutorials][godot-beginners-tutorials] Not uploaded yet. Will be uploaded with the video tutorial.
 
 [godot-beginners-tutorials]: https://github.com/swarnimarun
 
-## Method #1
+## Grid-Based Movement
 
-The first method is using of a lerp function, to move the player by directly modifying the value of position.
+For this we will be using of a lerp function, to move the player by directly modifying the value of position.
 
-### Pros
+### Understanding Grid
 
-- It's super simple to implement.
-- It uses just the basic method so easy to manage.
+In a grid each block is fixed distance from the ones adjacent/having a side common to it, if not atleast it follows a pattern which makes movement in a grid pridictable.
 
-### Cons
+So each movement to left is a movement by `x`.
 
-- Limited and difficult to modify.
+![Grid Image Player](https://i.imgur.com/ioluyQ1.jpg)
+
+And in a grid the most common movement is 4 way over the regular 8 way movement. And in case of analog stick the movement can even be infinite but here we are not going to be using analog.
 
 ### Script or Code
 <hr/>
@@ -99,4 +100,21 @@ The code is quite simple, we use the value of initial position and target positi
 
 In the code target position is the position on the grid that we have to move created using the tileSize that you input.
 
-You can even use different tileSizes for x and y axis but that is not required.
+You can even use different tileSizes for x and y axis but that is not required. It can be implemented like,
+```swift
+export(Vector2) var tileSize;
+// skipping..... to the point
+target = initial + Vector2(tileSize.x * inp.x, tileSize.y * inp.y)
+```
+Then we check and see if the target is reached then we can again take input and start moving. Voila!
+
+But finally, we use the int() conversion of the bools to get the axis strength i.e. if the left and right both keys are pressed then the answer should be zero and if one of them is pressed it should be 1 with the respective sign.
+
+
+## Conclusion
+
+In the end we realize that it was quite simple to create grid-based movement and even simpler to modify it upto our needs from a square to rectangle. And also with 8 direction motion implementation., that follows the grid.
+
+The tutorial will be uploaded once the newer input strength features are available in an alpha build atleast until then this is the best and most reliable way. 
+
+If you have any problems or want to share feedback or just have any questions you feel like asking use the comments section below.
