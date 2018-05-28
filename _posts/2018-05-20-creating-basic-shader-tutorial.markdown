@@ -3,7 +3,7 @@ layout: single
 header:
     image: "https://img.youtube.com/vi/Lk-N-Ej0DDg/maxresdefault.jpg"
 toc: true
-title:  "Basics of Shaders with Godot"
+title:  "Basics of Shaders with Godot -- Incomplete"
 date:   2018-05-20
 related: true
 category: 
@@ -38,8 +38,6 @@ Link: [godot-shader-tutorials][shader-repo]
 ## Understanding Graphics Programming
 
 So the first step to becoming a programmer is to learn the basics of what you are doing and similar is the case with Graphics Programming.
-
-![Factory](../../../images/factory-comic.png)
 
 To give you all a basic idea, let's compare the GPU to a factory that processes lots of stuff at tremendous speeds and this makes the job of managing very difficult. In a similar fashion GPU's process image information and the management of it all is done through shaders.
 
@@ -82,9 +80,14 @@ render_mode unshaded;
 // the possible render modes are many check them out on the docs page.
 ```
 
+Link to the godot docs: [Shading language](http://docs.godotengine.org/en/3.0/tutorials/shading/shading_language.html)
+
+
 Step 2: Taking external input in shaders. This is difficult cause shaders use GPU which is a fortress and hard to get through but there is a way to do it and it's by using `uniform` keyword.
 
 ```glsl
 uniform vec4 color : hint_color;
 // here color variable is an output for the shader
 ```
+
+TODO....
