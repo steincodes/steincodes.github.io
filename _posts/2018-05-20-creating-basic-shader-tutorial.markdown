@@ -1,5 +1,7 @@
 ---
 layout: single
+header:
+    image: "https://i9.ytimg.com/vi/Lk-N-Ej0DDg/maxresdefault.jpg?sqp=CMTPrtgF&rs=AOn4CLC7w09xjIPoqDHMvqrmsuKxCP_JEg&time=1527490548083"
 toc: true
 title:  "Basics of Shaders with Godot"
 date:   2018-05-20
@@ -31,13 +33,13 @@ If you are a programmer with no knowledge of Shaders or Graphics Programming or 
 Download the project files from my github repository.
 Link: [godot-shader-tutorials][shader-repo]
 
-[shader-repo]: https://github.com/swarnimarun
+[shader-repo]: https://github.com/steincodes/godot-shader-tutorials
 
 ## Understanding Graphics Programming
 
 So the first step to becoming a programmer is to learn the basics of what you are doing and similar is the case with Graphics Programming.
 
-![Alt Text for image](../../../images/teaser.png)
+![Factory](../../../images/factory-comic.png)
 
 To give you all a basic idea, let's compare the GPU to a factory that processes lots of stuff at tremendous speeds and this makes the job of managing very difficult. In a similar fashion GPU's process image information and the management of it all is done through shaders.
 
@@ -71,8 +73,16 @@ Here's some examples in video format. You can skip the video if you like.
 
 Here's some written shader examples and explainations.
 
-Step 1: Taking external input in shaders. This is difficult cause shaders use GPU which is a fortress and hard to get through but there is a way to do it and it's by using `uniform` keyword.
+Step 1: Godot's system for shaders is different from, basic opengl so it asks you to give it a `shader_type` so that it can ease the process of creation of shaders. It also takes in `render_mode` to help with it.
 
+```glsl
+shader_type canvas_item;
+// other options are spatial and particle
+render_mode unshaded;
+// the possible render modes are many check them out on the docs page.
+```
+
+Step 2: Taking external input in shaders. This is difficult cause shaders use GPU which is a fortress and hard to get through but there is a way to do it and it's by using `uniform` keyword.
 
 ```glsl
 uniform vec4 color : hint_color;
