@@ -95,7 +95,7 @@ Awesome news. Blender will be implementing support for external Game Engines. Go
 
 ![Tweet Reply Image](https://i.imgur.com/5pIc3rS.png)
 
-Link: https://twitter.com/blender_org/status/1001110824012967936
+Link: [Blender's Official Tweet](https://twitter.com/blender_org/status/1001110824012967936)
 
 ## Conclusion
 
