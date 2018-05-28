@@ -88,6 +88,14 @@ So basically this is made to address the issues with the Godot that really cause
 
 [Issue Link: UI Improvements Suggestions](https://github.com/godotengine/godot/issues/19197)
  , there are lots of problems with the current Godot UI and you might want everything to be fixed but please understand somethings need time and some just can't be done so if the devs say no then it's most likely a no especially if the dev is @reduz.
+ 
+## Update: Blender might soon have default support for Godot
+
+Awesome news. Blender will be implementing support for external Game Engines. Godot will likely be added. Here's some proof.
+
+![Tweet Reply Image](https://i.imgur.com/5pIc3rS.png)
+
+Link: https://twitter.com/blender_org/status/1001110824012967936
 
 ## Conclusion
 
