@@ -1,7 +1,7 @@
 ---
 layout: single
 header:
-    image: "https://i9.ytimg.com/vi/Lk-N-Ej0DDg/maxresdefault.jpg?sqp=CMTPrtgF&rs=AOn4CLC7w09xjIPoqDHMvqrmsuKxCP_JEg&time=1527490548083"
+    image: "https://img.youtube.com/vi/Lk-N-Ej0DDg/maxresdefault.jpg"
 toc: true
 title:  "Basics of Shaders with Godot"
 date:   2018-05-20
