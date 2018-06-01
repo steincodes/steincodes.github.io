@@ -111,9 +111,10 @@ The code is quite simple, we use the value of initial position and target positi
 
 In the code target position is the position on the grid that we have to move created using the tileSize that you input.
 
-You see that I use a fourth variable `d` to store time which when equal to or greater than 1 will be reset to 0. That means 1 second divided by speed will be the time in which the movement is complete which allows for creating movement as per real world time. And helps the person modifying the setting understand how to use the code better.
+You see that I use a fourth variable `d` to store time which when equal to or greater than 1 will be reset to 0. That means 1 second divided by speed will be the time in which the movement is complete which allows for creating movement as per real world time. 
 
-That means if, speed = 0.5 then the time taken for the movement will be 2 seconds and if speed = 2 then the time taken fot the movement will be half a second.
+And helps the person modifying the setting understand how to use the code better.
+That means if, `speed = 0.5` then the time taken for the movement will be 2 seconds and if `speed = 2` then the time taken fot the movement will be half a second.
 
 You can even use different tileSizes for x and y axis but that is not required. It can be implemented like,
 ```swift
