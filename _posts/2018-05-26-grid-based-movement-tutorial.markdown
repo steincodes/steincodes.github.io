@@ -63,10 +63,16 @@ export(int) var tileSize = 32
 var target = Vector2()
 var initial = Vector2()
 var inp = Vector2()
+var d = 0 # stores time
 
 func _process(delta):
+    var val = d * speed
+    # use the val to move from initial to final position
+    if val > 1.0: 
+        val = 1
+        d = 0
     # set the position equal to the lerp between initial and target position
-    self.position = lerp(initial, target, speed * delta)
+    self.position = lerp(initial, target, val)
     # check and see if the input is zero
     if inp.magnitude != 0:
         # setup initial and target position using tileSize and inp
@@ -78,6 +84,8 @@ func _process(delta):
     elif self.position == target:
         # if input is zero and target is reached start taking inputs again
         get_input_dir()
+    else:
+        d += delta
 
 func get_input_dir():
     # this check allows for only 4-way motion,
