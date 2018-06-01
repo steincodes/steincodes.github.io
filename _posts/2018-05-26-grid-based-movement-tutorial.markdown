@@ -46,7 +46,7 @@ In a grid each block is fixed distance from the ones adjacent/having a side comm
 
 So each movement to left is a movement by `x`.
 
-![Grid Image Player](https://i.imgur.com/ioluyQ1.jpg)
+![Grid Image](https://i.imgur.com/OuXQcI7.png)
 
 And in a grid the most common movement is 4 way over the regular 8 way movement. And in case of analog stick the movement can even be infinite but here we are not going to be using analog.
 
