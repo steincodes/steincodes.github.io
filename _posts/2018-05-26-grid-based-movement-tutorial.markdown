@@ -63,12 +63,13 @@ export(int) var tileSize = 32
 var target = Vector2()
 var initial = Vector2()
 var inp = Vector2()
-var d = 0 # stores time
+var d = 0 
+# stores time that is incremented by delta
 
 func _process(delta):
     var val = d * speed
     # use the val to move from initial to final position
-    if val > 1.0: 
+    if val >= 1.0: 
         val = 1
         d = 0
     # set the position equal to the lerp between initial and target position
@@ -85,6 +86,8 @@ func _process(delta):
         # if input is zero and target is reached start taking inputs again
         get_input_dir()
     else:
+        # as delta is time from last from so if you keep adding it will reach
+        # 1 when the total time elapsed is 1 second. So it is just time in secs.
         d += delta
 
 func get_input_dir():
@@ -107,6 +110,9 @@ func get_input_dir():
 The code is quite simple, we use the value of initial position and target position set when Input is non-zero and target position is equal to our current position in world.
 
 In the code target position is the position on the grid that we have to move created using the tileSize that you input.
+
+You see that I use a fourth variable `d` to store time which when equal to or greater than 1 will be reset to 0. That means 1 second divided by speed will be the time in which the movement is complete which allows for creating movement as per real world time. And helps the person modifying the setting understand how to use the code better.
+That means if, speed = 0.5 then the time taken for the movement will be 2 seconds and if speed = 2 then the time taken fot the movement will be half a second.
 
 You can even use different tileSizes for x and y axis but that is not required. It can be implemented like,
 ```swift
