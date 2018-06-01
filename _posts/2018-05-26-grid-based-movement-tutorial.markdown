@@ -60,11 +60,16 @@ extends Node2D
 export(float) var speed = 10.0     
 export(int) var tileSize = 32    
 
+# store target and initial position to move to and from.
 var target = Vector2()
 var initial = Vector2()
+
+# store the input from arrow keys to allow movement
 var inp = Vector2()
-var d = 0 
+
 # stores time that is incremented by delta
+var d = 0 
+
 
 func _process(delta):
     var val = d * speed
@@ -92,7 +97,6 @@ func _process(delta):
 
 func get_input_dir():
     # this check allows for only 4-way motion,
-    #                  if you want 8 way motion then remove the ifs
     if inp.x == 0:
         # convert boolean to int to use them to get the input direction
         inp.y = (int(Input.is_action_pressed("ui_down"))
@@ -116,7 +120,7 @@ You see that I use a fourth variable `d` to store time which when equal to or gr
 And helps the person modifying the setting understand how to use the code better.
 That means if, `speed = 0.5` then the time taken for the movement will be 2 seconds and if `speed = 2` then the time taken fot the movement will be half a second.
 
-You can even use different tileSizes for x and y axis but that is not required. It can be implemented like,
+You can even use different tileSizes for x and y axis but that is not required. This will allow you to create grids with rectangles rather than squares, it's silly but possible. It can be implemented like,
 ```swift
 export(Vector2) var tileSize;
 // skipping..... to the point
@@ -124,8 +128,10 @@ target = initial + Vector2(tileSize.x * inp.x, tileSize.y * inp.y)
 ```
 Then we check and see if the target is reached then we can again take input and start moving. Voila!
 
-But finally, we use the int() conversion of the bools to get the axis strength i.e. if the left and right both keys are pressed then the answer should be zero and if one of them is pressed it should be 1 with the respective sign.
+And my last trick is simple really but if you are a beginner at programming try to understand and put your explaination in the comments section. It will help you understand code from more advanced levels to try to think more.
+I will message you the right answer or tell you if you are write will be fun.
 
+And if you are more advanced and you have problems understanding the code. Then seriously put something in the comments we need to talk.
 
 ## Conclusion
 
