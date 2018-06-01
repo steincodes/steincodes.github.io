@@ -78,7 +78,8 @@ func _process(delta):
         val = 1
         d = 0
     # set the position equal to the lerp between initial and target position
-    self.position = lerp(initial, target, val)
+    self.position.x = lerp(initial.x, target.x, val)
+    self.position.y = lerp(initial.y, target.y, val)
     # check and see if the input is zero
     if inp.magnitude != 0:
         # setup initial and target position using tileSize and inp
