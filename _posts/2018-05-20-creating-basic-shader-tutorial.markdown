@@ -90,6 +90,4 @@ uniform vec4 color : hint_color;
 // here color variable is an output for the shader
 ```
 
-<embed src="https://swarnimarun.github.io/test-repo" height="600" width="1024">
-
 TODO....
