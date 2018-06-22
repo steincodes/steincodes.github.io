@@ -81,6 +81,8 @@ Also go ahead and checkout my game and rate it, My Game: [Tempors](https://itch.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here another <a href="https://twitter.com/hashtag/nvidia?src=hash&amp;ref_src=twsrc%5Etfw">#nvidia</a> <a href="https://twitter.com/hashtag/flex?src=hash&amp;ref_src=twsrc%5Etfw">#flex</a> implementation update in <a href="https://twitter.com/hashtag/GodotEngine?src=hash&amp;ref_src=twsrc%5Etfw">#GodotEngine</a>  <a href="https://t.co/1oA9NXoa8T">https://t.co/1oA9NXoa8T</a> now is possible to use Primitive shape, check the video</p>&mdash; Andrea Catania (@_AndreaCatania) <a href="https://twitter.com/_AndreaCatania/status/1006098930550091776?ref_src=twsrc%5Etfw">June 11, 2018</a></blockquote>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is 3th update about <a href="https://twitter.com/hashtag/nvidia_flex?src=hash&amp;ref_src=twsrc%5Etfw">#nvidia_flex</a> implementation in <a href="https://twitter.com/hashtag/godotengine?src=hash&amp;ref_src=twsrc%5Etfw">#godotengine</a> here you can see mesh deformation according to clusters transformation of body: <a href="https://t.co/xy0N2uw5mu">https://t.co/xy0N2uw5mu</a></p>&mdash; Andrea Catania (@_AndreaCatania) <a href="https://twitter.com/_AndreaCatania/status/1008994183380701185?ref_src=twsrc%5Etfw">June 19, 2018</a></blockquote>
+
 I think the tweet says enough here.
 
 
