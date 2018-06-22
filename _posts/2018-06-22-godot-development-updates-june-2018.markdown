@@ -95,8 +95,7 @@ The discussion is about whether we should remove some features and make Godot mo
 The problem here lies in the views not in the approach so if you want to add something read a bit more first.
 
 [Issue Link: Engine Bloat Discussion](https://github.com/godotengine/godot/issues/19486)
- , I think the new sub-system idea was too good to pass up on but I am not the voice of the world check it out yourself.
-
+ , I think a little bloat doesn't matter but I am not the expert here.
 
 ## My Tileset creation process improvement suggestion --Active
 
