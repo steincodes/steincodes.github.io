@@ -141,5 +141,3 @@ In the end we realize that it was quite simple to create grid-based movement and
 The tutorial will be uploaded once the newer input strength features are available in an alpha build atleast until then this is the best and most reliable way. 
 
 If you have any problems or want to share feedback or just have any questions you feel like asking use the comments section below.
-
-<embed src="https://swarnimarun.github.io/test-repo" height="600" width="1024">
