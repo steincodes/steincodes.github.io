@@ -1,9 +1,12 @@
 ---
 layout: single
 header:
-    image: "image-link-here"
+    image: "https://github.com/steincodes/steincodes.github.io/raw/master/images/Thumbnail_Shader_Coding.png"
 toc: true
 title:  "Coding Shaders in Godot Part-1"
+classes:
+    - wide-left
+author_profile: false
 date:   2018-09-15
 related: true
 category: 
@@ -104,7 +107,7 @@ uniform float variable_name; // This is a variable that takes input
 // int - decimal numeric data
 // bool - boolean
 // sampler2D - this is the texture data
-// uint - unsinged int -no negatives- 0 to 2^32 (that's kinda huge)
+// uint - unsigned int i.e. no -ve's, 0 to 2^32 (that's kinda huge)
 // and so on...
 
 ```
@@ -220,7 +223,7 @@ void fragment() {
 
 Now to do it in the Visual Shader Editor( more explaination will be added soon enough ).
 For now just use this image, as reference.
-![](https://swarnimarun.github.io/image-here)
+![](https://github.com/steincodes/steincodes.github.io/raw/master/images/multiply_color_visual_shader.PNG)
 
 For now that concludes the part one.
 Next one we will code more things and also try Visual Shader Editor more.
