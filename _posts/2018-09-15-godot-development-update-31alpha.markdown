@@ -34,6 +34,7 @@ We have got a some very welcome new Animation features with the introduction of 
 
 ### Animation Player
 ![](https://godotengine.org/storage/app/uploads/public/5b1/962/d39/5b1962d39ad28606691486.png)
+
 Animation Player was always the silver lining for Godot being how simple and easy it was to use, but now with the new changes it's soo much more powerful and godotific.
 Ok that last word was on my list of words to use this year.
 
@@ -48,12 +49,14 @@ Read more at [this link](https://godotengine.org/article/godot-gets-brand-new-an
 
 ### AnimationGraph/AnimationTree
 ![](https://godotengine.org/storage/app/uploads/public/5b3/2c4/a01/5b32c4a01b3dc233539052.gif)
+
 We also saw Reduz write a whole new AnimationTree with state management and blends and a lot of awesome things, which was also then refactor/revamped. I am still unsure about it's completion.
 
 Read More about it [here](https://godotengine.org/article/godot-gets-new-animation-tree-state-machine).
 
 ## NEW Visual Shader Editor
 ![](https://godotengine.org/storage/app/uploads/public/5b4/a6c/003/5b4a6c0038ced706516053.gif)
+
 So we finally have our long awaited, Visual Shader Editor. But is it perfect, nope. Is it the best Visual Shader Editor? nope. Is it the new Awesome thing? nope.
 
 ....Does it work? yes. And we are only in alpha, hope to see lots of changes to it to make it better and more productive tool.
@@ -62,6 +65,7 @@ Read more [here](https://godotengine.org/article/visual-shader-editor-back).
 
 ## Constructive Solid Geometry Features
 ![](https://godotengine.org/storage/app/media/csg/csg7.gif)
+
 CSG is a big thing for quick prototyping in 3D, and has lots of advantages. But the biggest one is that you won't have to fire up a 3D suite to make minor changes to simple geometry to add doors and hallways.
 
 Godot's implementation is more special as it allows for in-game use as well, you could theoritically use the nodes to create sort of procedural geometry.
