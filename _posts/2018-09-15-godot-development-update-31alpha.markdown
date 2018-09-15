@@ -16,9 +16,6 @@ comments: true
 
 So it's been a while since I did one of these, but I had to wait for Godot 3.1 for more features to talk about and this will likely be followed by a series of video and text posts for each of the new features of Godot. 
 
-I might even do some feature fixing while I am at it, but exams are closing in so no promises.
-
-
 OK, so we now have the Godot 3.1 Alpha with us and we have now reached the state of feature freeze for this new version.
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After months of work on our upcoming 3.1 version, we&#39;ve now reached the alpha milestone and publish a first official snapshot of <a href="https://twitter.com/hashtag/GodotEngine?src=hash&amp;ref_src=twsrc%5Etfw">#GodotEngine</a>&#39;s master branch.<br><br>Happy testing and bug hunting! 🐞 <a href="https://twitter.com/hashtag/FOSS?src=hash&amp;ref_src=twsrc%5Etfw">#FOSS</a><a href="https://t.co/emVHojnC7j">https://t.co/emVHojnC7j</a></p>&mdash; Rémi Verschelde (@Akien) <a href="https://twitter.com/Akien/status/1035427197702610944?ref_src=twsrc%5Etfw">August 31, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
