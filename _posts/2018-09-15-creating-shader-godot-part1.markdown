@@ -23,6 +23,8 @@ Godot is a powerful game engine and Godot's Shading language as of the time of w
 
 So, Godot's Shading language is quite similar to OpenGL while still having lots of differences.
 
+For extra questions or long discussions about more tutorials and programming and design related stuff, join my discord, [Steincodes Server Invite](https://discord.gg/AqDfU3X). 
+
 ## Requirements For This Tutorial
 
 As of writing this tutorial I don't expect any previous knowledge of Godot or Programming or Shaders. But I expect that the reader knows basic Maths cause I won't be explaining it. I will explain complex maths though.
