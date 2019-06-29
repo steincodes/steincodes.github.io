@@ -18,6 +18,10 @@ This is a changelog and manual of all the changes made to the VisualScript syste
 The builds are at [google docs folder link](https://drive.google.com/drive/folders/1jZxsxn7dwdsrYXBollUFuHgE6wiWtW3T?usp=sharing)
 They will be regularly updated(somewhat regularly).
 
+Quick Video of the changes in action: 
+
+<iframe max-height="480" src="https://drive.google.com/file/d/1V1o5sHzvDDs1i8dgtRYwerx2juUFxsk7/preview" frameborder="0" allowfullscreen></iframe>
+
 Let's start with the first change that's the unification of the Visual Script Graph.
 This means that all functions are now in the same view no need for tapping around to reach them.
 
