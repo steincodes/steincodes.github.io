@@ -1,5 +1,6 @@
 ---
 layout: single
+toc: false
 title:  "Visual Scripting System overhaul!"
 date:   2019-06-29 
 related: true
