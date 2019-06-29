@@ -1,8 +1,5 @@
 ---
 layout: single
-header:
-    image: "https://github.com/steincodes/steincodes.github.io/raw/master/images/godot_31_alpha_v2.png"
-toc: true
 title:  "Visual Scripting System overhaul!"
 date:   2019-06-29 
 related: true
