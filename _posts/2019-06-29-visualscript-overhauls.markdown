@@ -14,6 +14,8 @@ comments: true
 
 This is a changelog and manual of all the changes made to the VisualScript system of sorts. This should help you all understand the changes before you all dive in and start trying the builds already.
 
+*These changes are part of my long list of changes planned and in work for Godot VisualScript System under GSOC.*
+
 The builds are at [google docs folder link](https://drive.google.com/drive/folders/1jZxsxn7dwdsrYXBollUFuHgE6wiWtW3T?usp=sharing)
 They will be regularly updated.
 
